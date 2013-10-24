@@ -12,7 +12,7 @@ public class Journals {
 		return input;
 	}
 	
-	public String[] parseLine(String line) { // TODO Cette fonction peut etre amelioree
+	public String[] parseLine(String line) { // TODO Cette fonction peut etre amelioree!
 		
 		String[] parseLine = new String[8]; 
 
