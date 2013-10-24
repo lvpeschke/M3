@@ -1,3 +1,4 @@
+// FRANCOIS
 
 public class Magazine {
 	

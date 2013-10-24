@@ -1,9 +1,11 @@
+// GUILLAUME
+
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
 
 /**
- * Classe permettant de lire le fichier d'entrée
+ * Classe permettant de lire le fichier d'entree
  * 
  * @author Group 10
  * @version October 2013
@@ -45,7 +47,7 @@ public class Reader {
 	}
 	
 	/**
-	   * Methode permettant de fermer le fichier d'entrée // LE FLUX...
+	   * Methode permettant de fermer le fichier d'entree // LE FLUX...
 	   *  
 	   * @pre  ...
 	   * @post ...

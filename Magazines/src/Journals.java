@@ -1,4 +1,4 @@
-
+// LENA
 
 public class Journals {
 	
