@@ -19,8 +19,8 @@ public class Main {
 		while (!line.equals("")) {
 			String[] parseLine = journals.parseLine(line);
 			
-			Magazine magazine = new Magazine(parseLine[0],parseLine[2],parseLine[3],parseLine[4],parseLine[5],parseLine[6],parseLine[7]);
-			// TODO si rien d'utile a stocker dedans...
+			//Magazine magazine = new Magazine(parseLine[0],parseLine[2],parseLine[3],parseLine[4],parseLine[5],parseLine[6],parseLine[7]);
+			Magazine magazine = new Magazine(parseLine);
 			
 			hashmap.put(parseLine[1], magazine);
 

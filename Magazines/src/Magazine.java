@@ -19,6 +19,24 @@ public class Magazine {
 		FoR3 = foR3;
 		FoR3Name = foR3Name;
 	}
+	
+	/**
+	 * Constructeur
+	 * @pre entries est un tableau de String a exactement 8 entrees
+	 * @post cree un Magazine dont les 7 attributs sont les 7 entrees du tableau 0,2-7
+	 */
+	public Magazine(String[] entries) {
+		if (entries.length != 8)
+			return;
+		
+		Rank = entries[0];
+		FoR1 = entries[2];
+		FoR1Name = entries[3];
+		FoR2 = entries[4];
+		FoR2Name = entries[5];
+		FoR3 = entries[6];
+		FoR3Name = entries[7];
+	}
 
 	public String getRank() {
 		return Rank;
