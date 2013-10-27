@@ -1,4 +1,3 @@
-// LENA
 /**
  * Journals contient un Reader et permet de lire une entree du fichier correctement,
  * en le decoupant selon les virgules tenant compte des guillemets.

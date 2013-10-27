@@ -94,7 +94,26 @@ public class Magazine {
 		FoR3Name = foR3Name;
 	}
 	
-	public String toString() { // TODO A ameliorer si certains champs sont nuls.
-		return "Rank: " + getRank() + "\n" + "FoR1: " + getFoR1() + "\n" + "FoR1Name: " + getFoR1Name() + "\n" + "FoR2: " + getFoR2() + "\n" + "FoR2Name: " + getFoR2Name() + "\n" + "FoR3: " + getFoR3() + "\n" + "FoR3Name: " + getFoR3Name();
+	public String toString() {
+		if (Rank == null && FoR1 == null && FoR1Name == null && FoR2 == null && FoR2Name == null && FoR3 == null && FoR3Name == null)
+			return "No additional data available for this entry";
+		
+		String retour = "";
+		if (Rank != null)
+			retour = retour.concat("Rank: ").concat(getRank()).concat("\n");
+		if (FoR1 != null)
+			retour = retour.concat("FoR1: ").concat(getFoR1()).concat("\n");
+		if (FoR1Name != null)
+			retour = retour.concat("FoR1Name: ").concat(getFoR1Name()).concat("\n");
+		if (FoR2 != null)
+			retour = retour.concat("FoR2: ").concat(getFoR2()).concat("\n");
+		if (FoR2Name != null)
+			retour = retour.concat("FoR2Name: ").concat(getFoR2Name()).concat("\n");
+		if (FoR3 != null)
+			retour = retour.concat("FoR3: ").concat(getFoR1()).concat("\n");
+		if (FoR3Name != null)
+			retour = retour.concat("FoR3Name: ").concat(getFoR1Name()).concat("\n");
+		
+		return retour;
 	}
 }

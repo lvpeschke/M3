@@ -6,20 +6,22 @@ import java.util.Scanner;
 public class Main {
 	
 	public static void main(String[] args) {
-		Journals journals = new Journals("Journals.csv"); // TODO Remplacer par args[0]
+		
+		Journals journals = new Journals(args[0]);
 		Reader reader = journals.getInput();
 		
 		// HashMap
 		HashMap<String,Magazine> hashmap = new HashMap<String,Magazine>();
 		
-		String line = reader.readNextLine(); // TODO La premiere ligne faut-il la lire?
+		// ne tient pas compte de la premiere ligne
+		String line = reader.readNextLine();
 		line = reader.readNextLine();
-		// TODO Cas ou il n'y a pas de ligne (pas tres realiste mais bon...)
+		if (line == null)
+			System.out.println("Your file does not contain any usefull content");
 		
 		while (!line.equals("")) {
 			String[] parseLine = journals.parseLine(line);
 			
-			//Magazine magazine = new Magazine(parseLine[0],parseLine[2],parseLine[3],parseLine[4],parseLine[5],parseLine[6],parseLine[7]);
 			Magazine magazine = new Magazine(parseLine);
 			
 			hashmap.put(parseLine[1], magazine);
