@@ -1,5 +1,3 @@
-// GUILLAUME
-
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
@@ -7,7 +5,7 @@ import java.io.IOException;
 /**
  * Classe permettant de lire le fichier d'entree
  * 
- * @author Group 10
+ * @author Group 10 - Moyson Guillaume
  * @version October 2013
  */
 public class Reader {
@@ -31,11 +29,11 @@ public class Reader {
 	}
 	
 	/**
-	   * Methode permettant de lire la premiere ligne du fichier d'entree deja ouvert
+	   * Methode permettant de lire les ligne du fichier d'entree deja ouvert
 	   *  
-	   * @pre  ...
-	   * @post ...
-	   * @exception IOException ...
+	   * @pre  le fichier est ouvert en lecture (input n'est pas null)
+	   * @post renvoie le string correspondant a la ligne suivante du fichier ouvert en lecture
+	   * @exception IOException if an I/O error occurs
 	   * 
 	   */ 
 	public String readNextLine(){
@@ -47,18 +45,18 @@ public class Reader {
 	}
 	
 	/**
-	   * Methode permettant de fermer le fichier d'entree // LE FLUX...
+	   * Methode permettant de fermer le flux, le fichier d'entree
 	   *  
-	   * @pre  ...
-	   * @post ...
-	   * @exception IOException ...
+	   * @pre  le fichier est ouvert en lecture (input n'est pas null)
+	   * @post le fichier ouvert en lecture par input est ferme
+	   * @exception IOException if an I/O error occurs
 	   * 
 	   */ 
 	public void close() {		
 		try {
 			this.input.close();
 		} catch (IOException e) {
-			System.out.print("Error closing inputfile\n"); // LE FLUX...
+			System.out.print("Error closing inputfile\n"); 
 		}	
 	}
 }
