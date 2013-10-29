@@ -15,7 +15,6 @@ public class Main {
 		Journals journals = new Journals(args[0]);
 		Reader reader = journals.getInput();
 		
-		// HashMap
 		HashMap<String,Magazine> hashmap = new HashMap<String,Magazine>();
 		
 		String line = reader.readNextLine();
@@ -25,7 +24,7 @@ public class Main {
 		if (line == null)
 			System.out.println("Your file does not contain any usefull content");
 		
-		while (!line.equals("")) {
+		while (true) {
 			String[] parseLine = journals.parseLine(line);
 			
 			Magazine magazine = new Magazine(parseLine);
