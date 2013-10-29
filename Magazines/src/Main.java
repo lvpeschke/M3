@@ -15,6 +15,8 @@ public class Main {
 		
 		// ne tient pas compte de la premiere ligne
 		String line = reader.readNextLine();
+		if (line == null)
+			System.out.println("Your file does not contain any usefull content");
 		line = reader.readNextLine();
 		if (line == null)
 			System.out.println("Your file does not contain any usefull content");
