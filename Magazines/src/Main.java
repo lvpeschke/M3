@@ -28,7 +28,7 @@ public class Main {
 			
 			Magazine magazine = new Magazine(parseLine);
 			
-			hashmap.put(parseLine[1], magazine);
+                        hashmap.put(parseLine[1].toLowerCase(), magazine);
 
 			line = reader.readNextLine();
 
@@ -49,7 +49,7 @@ public class Main {
 		String title;
 		title = in.nextLine();
 		while (!title.equals("q")) {
-			Magazine magazine = (Magazine) hashmap.get((String) title);
+                        Magazine magazine = (Magazine) hashmap.get(((String) title).toLowerCase());
 			if (magazine == null) {
 				System.out.println("Your magazine hasn't been found");
 			}
