@@ -1,5 +1,7 @@
-// FRANCOIS
-
+/**
+ * La classe magazine permet de representer une revue sous la forme d'un objet
+ * Les variables d'instance de la classe donnent les differentes informations disponibles sur la revue sous forme de String
+ */
 public class Magazine {
 	
 	private String Rank;
@@ -10,6 +12,12 @@ public class Magazine {
 	private String FoR3;
 	private String FoR3Name;
 	
+	
+	/**
+	 * Constructeur
+	 * @pre none
+	 * @post cree un Magazine dont les 7 attributs sont passes en arguments
+	 */
 	public Magazine(String rank, String foR1, String foR1Name, String foR2, String foR2Name, String foR3, String foR3Name) {
 		Rank = rank;
 		FoR1 = foR1;
@@ -94,6 +102,12 @@ public class Magazine {
 		FoR3Name = foR3Name;
 	}
 	
+	/**
+	 * Méthode toString
+	 * @pre none
+	 * @return Retourne une chaine de caracteres representant l'objet Magazine sous forme strucutree.
+	 * 		   Si un attribut est a null, alors aucune information n'est affichee a son propos.
+	 */
 	public String toString() {
 		if (Rank == null && FoR1 == null && FoR1Name == null && FoR2 == null && FoR2Name == null && FoR3 == null && FoR3Name == null)
 			return "No additional data available for this entry";
