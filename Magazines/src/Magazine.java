@@ -1,6 +1,11 @@
 /**
  * La classe magazine permet de representer une revue sous la forme d'un objet
- * Les variables d'instance de la classe donnent les differentes informations disponibles sur la revue sous forme de String
+ * Les variables d'instance de la classe donnent les differentes informations 
+ * disponibles sur la revue sous forme de String.
+ * 
+ * @author Francois Raucent
+ * @author Goeric Huybrechts
+ * @author Lena Peschke
  */
 public class Magazine {
 	
@@ -103,7 +108,7 @@ public class Magazine {
 	}
 	
 	/**
-	 * Méthode toString
+	 * Methode toString
 	 * @pre none
 	 * @return Retourne une chaine de caracteres representant l'objet Magazine sous forme strucutree.
 	 * 		   Si un attribut est a null, alors aucune information n'est affichee a son propos.

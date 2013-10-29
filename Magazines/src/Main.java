@@ -2,7 +2,6 @@ import java.util.HashMap;
 import java.util.Scanner;
 
 /**
- * 
  * Classe Main
  * 
  * @author Goeric Huybrechts
