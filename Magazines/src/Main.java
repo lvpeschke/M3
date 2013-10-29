@@ -13,7 +13,6 @@ public class Main {
 		// HashMap
 		HashMap<String,Magazine> hashmap = new HashMap<String,Magazine>();
 		
-		// ne tient pas compte de la premiere ligne
 		String line = reader.readNextLine();
 		if (line == null)
 			System.out.println("Your file does not contain any usefull content");
