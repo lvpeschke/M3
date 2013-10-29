@@ -129,9 +129,9 @@ public class Magazine {
 		if (FoR2Name != null)
 			retour = retour.concat("FoR2Name: ").concat(getFoR2Name()).concat("\n");
 		if (FoR3 != null)
-			retour = retour.concat("FoR3: ").concat(getFoR1()).concat("\n");
+			retour = retour.concat("FoR3: ").concat(getFoR3()).concat("\n");
 		if (FoR3Name != null)
-			retour = retour.concat("FoR3Name: ").concat(getFoR1Name()).concat("\n");
+			retour = retour.concat("FoR3Name: ").concat(getFoR3Name()).concat("\n");
 		
 		return retour;
 	}
